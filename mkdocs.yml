@@ -1,0 +1,17 @@
+site_name: ML Note by UJHUYZ0110
+
+theme: readthedocs
+
+nav:
+- Table of Content: 'index.md'
+- Cost Functions: 'cost_functions.md'
+- Linear Models: 'linear_models.md'
+- Gradient Descent: 'gradient_descent.md'
+- Metrics for Evaluation: 'metrics_for_evaluation.md'
+
+extra_javascript:
+    - assets/mathjax_extra.js
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+markdown_extensions:
+    - mdx_math

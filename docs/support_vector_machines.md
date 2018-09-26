@@ -161,3 +161,50 @@ sigmoid_kernel_svm_clf.fit(X_train, Y_train)
 ```
 
 ## Regression
+### Model
+In an SVM regression problem, a model tries to keep as many points as possible inside a margin $\epsilon$.
+### Training
+The optimization problem for SVM regression is the following:
+
+
+\begin{equation*}
+\begin{aligned}
+& \underset{w, b}{\text{maximize}}
+& & \frac{1}{2}\Vert w \Vert^2 \\
+& \text{s.t.}
+& & y^{(i)} - (w^Tx^{(i)} + b) \leqslant \epsilon \text{, } i=1,...,m, \\
+& & &(w^Tx^{(i)} + b) - y^{(i)} \leqslant \epsilon \text{, } i=1,...,m, \\
+\end{aligned}
+\end{equation*}
+
+To allow some points to be outside the margin, the optimization problem becomes:
+
+
+\begin{equation*}
+\begin{aligned}
+& \underset{w, b}{\text{maximize}}
+& & \frac{1}{2}\Vert w \Vert^2 + C\sum_{i=1}^m (\zeta^{(i)} + {\zeta^{(i)}}^{*}) \\
+& \text{s.t.}
+& & y^{(i)} - (w^Tx^{(i)} + b) \leqslant \epsilon + \zeta^{(i)} \text{, } i=1,...,m, \\
+& & &(w^Tx^{(i)} + b) - y^{(i)} \leqslant \epsilon + {\zeta^{(i)}}^{*} \text{, } i=1,...,m, \\
+& & & \zeta^{(i)}, {\zeta^{(i)}}^{*} \geqslant 0
+\end{aligned}
+\end{equation*}
+
+
+### Code
+```python
+from sklearn import LinearSVR
+
+
+svm_reg = LinearSVR(epsilon=1.5)
+svm_reg.fit(X_train, Y_train)
+```
+
+```python
+from sklearn import SVR
+
+
+svm_reg = SVR(kernel='poly', degree=2, c=100, epsilon=0.5)
+svm_reg.fit(X_train, Y_train)
+```

@@ -103,7 +103,7 @@ rnd_clf.fit(X_train, Y_train)
 
 ## Boosting
 ###AdaBoost
-**Training**
+**Training (Classification)**
 
 - Initialize $w^{(i)} = \frac{1}{m} \text{for i = 1 ... m}$
 - For t = 1 ... T
@@ -118,10 +118,10 @@ rnd_clf.fit(X_train, Y_train)
         w^{(i)}exp(\alpha_t) & \text{if } \hat y_t^{(i)} \neq y^{(i)}
         \end{cases}$$
 
-**Model Prediction**
+**Model Prediction (Classification)**
 $$\hat y = {argmax}_k {\sum_{t=1}^T}_{\hat y_t = k} \alpha_t$$
 
-**Code**
+**Code (Classification)**
 ```python
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import AdaBoostClassifier
@@ -135,4 +135,19 @@ ada_clf = AdaBoostClassifier(
     )
 ada_clf.fit(X_train, Y_train)
 ```
+
 ###Gradient Boosting
+**Training (Regression)**
+
+For t (step) = 1...T
+
+- if t == 1:
+    - fit a model_t with the training dataset
+- else:
+    - fit a a model_t with $\epsilon^{(i)}$
+- calculate residual error
+    $$\epsilon^{(i)} = y^{(i)} - \hat y_t^{(i)}$$
+
+**Model prediction (Regression)**
+
+$$\hat y = \sum_{t=1}^T model_t(x)$$

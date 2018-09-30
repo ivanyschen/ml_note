@@ -151,3 +151,12 @@ For t (step) = 1...T
 **Model prediction (Regression)**
 
 $$\hat y = \sum_{t=1}^T model_t(x)$$
+
+**Code (Regression)**
+```python
+from sklearn.ensemble import GradientBoostingRegressor
+
+
+bg_reg = GradientBoostingRegressor()
+bg_reg.fit
+```

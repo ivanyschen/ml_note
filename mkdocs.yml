@@ -4,12 +4,12 @@ theme: readthedocs
 
 nav:
 - Table of Content: 'index.md'
-- Cost Functions: 'cost_functions.md'
 - Linear Models: 'linear_models.md'
 - Support Vector Machines: 'support_vector_machines.md'
 - Decision Trees: 'decision_trees.md'
 - Ensemble Learning: 'ensemble_learning.md'
 - Gradient Descent: 'gradient_descent.md'
+- Cost Functions: 'cost_functions.md'
 - Metrics for Evaluation: 'metrics_for_evaluation.md'
 
 extra_javascript:

@@ -32,8 +32,8 @@ The content can be considered to be my study note for the book [Hands-On Machine
         - Gradient Boosting
 
 ## Collections of Concepts
-- [Gradient Descent](gradient_descent.md)
-
 - [Cost Functions](cost_functions.md)
 
 - [Metrics for Evaluation](metrics_for_evaluation.md)
+
+<!-- - [Gradient Descent](gradient_descent.md) -->

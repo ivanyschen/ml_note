@@ -10,7 +10,7 @@ pages:
 - Ensemble Learning: 'ensemble_learning.md'
 - Cost Functions: 'cost_functions.md'
 - Metrics for Evaluation: 'metrics_for_evaluation.md'
-# - Gradient Descent: 'gradient_descent.md'
+- Gradient Descent: 'gradient_descent.md'
 
 extra_javascript:
     - assets/mathjax_extra.js

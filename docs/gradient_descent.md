@@ -32,14 +32,17 @@ Repeat until converge
             $$\theta_i := \theta_i - \alpha \frac{\partial J(\Theta)}{\partial \theta_i} \text{, where }\alpha \text{ is learning rate}$$
 
 
-## 3 Forms in Terms of Frequency of Parameter Update
+## Three Forms in Terms of Size of Data Used in Each Update
+**Batch Gradient Gradient Descent**: Using full training set at each iteration.
 
-### Batch Gradient Gradient Descent
+**Mini-Batch Gradient Descent**: Randomly divide training set into small batches and use one small batch at each iteration.
 
-### Mini-Batch Gradient Descent
-
-### stochastic Gradient Descent
-
-## Other Variations
+**stochastic Gradient Descent**: Randomly select and use one instance from training set at each iteration
 
 ## Partial Derivative for Frequent Used Functions
+**MSE**:
+$$J(\Theta) = \frac{1}{m} (\mathbf Y - \mathbf X \cdot \Theta)^2$$
+
+$$\nabla J(\Theta) = \frac{2}{m} \mathbf X^T \cdot (\mathbf X \cdot \Theta - \mathbf Y) $$
+
+**Cross Entropy for Binary Classes**:

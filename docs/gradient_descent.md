@@ -12,7 +12,7 @@ Slope of a function tends to point to a minimum of a function. Hence, by searchi
 
 ### Algorithm
 
-*Given a function $J(\Theta)$, find $\Theta^{\ast}$ such that $J(\Theta^{\ast})$ is a minimum of $J$.*
+*Given a function $J(\Theta)$, find $\Theta^{\ast}$ such that $J(\Theta^{\ast})$ is a minimum of $J$. (The most ideal case is to find the global minimum)*
 
 **Vector Form**
 

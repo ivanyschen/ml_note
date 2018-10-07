@@ -36,4 +36,4 @@ The content can be considered to be my study note for the book [Hands-On Machine
 
 - [Metrics for Evaluation](metrics_for_evaluation.md)
 
-<!-- - [Gradient Descent](gradient_descent.md) -->
+- [Gradient Descent](gradient_descent.md)

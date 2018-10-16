@@ -158,5 +158,5 @@ from sklearn.ensemble import GradientBoostingRegressor
 
 
 bg_reg = GradientBoostingRegressor()
-bg_reg.fit
+bg_reg.fit(X_train, Y_train)
 ```
